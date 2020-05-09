@@ -55,11 +55,9 @@
 		</header>
 
 		<div class="slideshow">
-
-		    <div class="mySlides fade">
-		       	<img src="./image/slider.png" style="width:100%">
-		        <div class="container">
-		        	<div class="mySlides__content">
+		    <div class="mySlides fade" style=" height: 100%">
+		    	<div class="container" style=" height: 100%">
+	    			<div class="mySlides__content">
 			        	<span class="hello">WELLCOME TO</span>
 						<h3 class="slogan"> <p>Builderz </p> Construction</h3>
 						<p class="desc">Giao diện website demo  VRđược viết bằng HTML5, CSS 3. Giao diện website demo  VRđược viết bằng HTML5, CSS 3. Giao diện website demo  VRđược viết bằng HTML5, CSS 3</p>
@@ -67,9 +65,9 @@
 						<button>BYE NOW</button>
 		        	</div>
 		        </div>
+		       	<img src="./image/slider.png" style="width:100%">
 		    </div>
 		    <div class="mySlides fade">
-		       	<img src="./image/slider2.jpg" style="width:100%">
 		        <div class="container">
 		        	<div class="mySlides__content">
 			        	<span class="hello">WELLCOME TO</span>
@@ -79,9 +77,9 @@
 						<button>BYE NOW</button>
 		        	</div>
 		        </div>
+		        <img src="./image/slider2.jpg" style="width:100%">
 		    </div>
 		    <div class="mySlides fade">
-		       	<img src="./image/slider1.jpg" style="width:100%">
 		        <div class="container">
 		        	<div class="mySlides__content">
 			        	<span class="hello">WELLCOME TO</span>
@@ -91,6 +89,7 @@
 						<button>BYE NOW</button>
 		        	</div>
 		        </div>
+		        <img src="./image/slider1.jpg" style="width:100%">
 		    </div>		   
 
 		    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -167,6 +166,7 @@
 		    	</div>
 	    	</div>
 	    </section>
+
 	    <section class="about">
 	    	<div class="container">
 	    		<div class="about__content">
@@ -201,93 +201,165 @@
 				<div class="title">Our Project</div>
 				<div class="desc">JavaScript là một ngôn ngữ lập trình thông dịch được phát triển từ các ý niệm nguyên mẫu.</div>
 				<ul class="menu">
-					<li><a href="#">All</a></li>
-					<li><a href="#">Hospital</a></li>
-					<li><a href="#">Building</a></li>
-					<li><a href="#">School</a></li>
-					<li><a href="#">Isolation</a></li>
-					<li><a href="#">Other</a></li>
+					<li><button onclick="openItem('All')">All</button></li>
+					<li><button onclick="openItem('Hospital')">Hospital</button></li>
+					<li><button onclick="openItem('Building')">Building</button></li>
+					<li><button onclick="openItem('School')">School</button></li>
+					<li><button onclick="openItem('Isolation')">Isolation</button></li>
+					<li><button onclick="openItem('Other')">Other</button></li>
 				</ul>
 			</div>
 			<div class="project__list">
-				<div class="project__item">
+				<div class="project__item Hospital">
 					<div class="project__item__flex">
 						<div class="content">
 							<h4 class="title">Project Item</h4>
 							<p class="desc">Construction</p>
 						</div>
-						<img src="image/icon-project.png" alt="project">
+						<img src="image/service 1.png" alt="project">
 					</div>
 				</div>
-				<div class="project__item">
+				<div class="project__item Hospital">
 					<div class="project__item__flex">
 						<div class="content">
 							<h4 class="title">Project Item</h4>
 							<p class="desc">Construction</p>
 						</div>
-						<img src="image/icon-project.png" alt="project">
+						<img src="image/service 2.png" alt="project">
 					</div>
 				</div>
-				<div class="project__item">
+				<div class="project__item Building">
 					<div class="project__item__flex">
 						<div class="content">
 							<h4 class="title">Project Item</h4>
 							<p class="desc">Construction</p>
 						</div>
-						<img src="image/icon-project.png" alt="project">
+						<img src="image/service 3.png" alt="project">
 					</div>
 				</div>
-				<div class="project__item">
+				<div class="project__item Building Hospital">
 					<div class="project__item__flex">
 						<div class="content">
 							<h4 class="title">Project Item</h4>
 							<p class="desc">Construction</p>
 						</div>
-						<img src="image/icon-project.png" alt="project">
+						<img src="image/service 4.png" alt="project">
 					</div>
 				</div>
-				<div class="project__item">
+				<div class="project__item School Hospital Other">
 					<div class="project__item__flex">
 						<div class="content">
 							<h4 class="title">Project Item</h4>
 							<p class="desc">Construction</p>
 						</div>
-						<img src="image/icon-project.png" alt="project">
+						<img src="image/service 5.png" alt="project">
 					</div>
 				</div>
-				<div class="project__item">
+				<div class="project__item School Building">
 					<div class="project__item__flex">
 						<div class="content">
 							<h4 class="title">Project Item</h4>
 							<p class="desc">Construction</p>
 						</div>
-						<img src="image/icon-project.png" alt="project">
+						<img src="image/service 6.png" alt="project">
 					</div>
 				</div>
-				<div class="project__item">
+				<div class="project__item Isolation Building">
 					<div class="project__item__flex">
 						<div class="content">
 							<h4 class="title">Project Item</h4>
 							<p class="desc">Construction</p>
 						</div>
-						<img src="image/icon-project.png" alt="project">
+						<img src="image/service 7.png" alt="project">
 					</div>
 				</div>
-				<div class="project__item">
+				<div class="project__item Other">
 					<div class="project__item__flex">
 						<div class="content">
 							<h4 class="title">Project Item</h4>
 							<p class="desc">Construction</p>
 						</div>
-						<img src="image/icon-project.png" alt="project">
+						<img src="image/service 8.png" alt="project">
 					</div>
 				</div>
 			</div>
 		</section>
-
-		<div class="test">
-			<div class="ba"></div>
-		</div>
+		
+		<section class="why">
+			<div class="why__top">
+				<h3 class="title">Why Choose Us</h3>
+				<p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+			</div>
+			<div class="why__bot">
+				<div class="why__image">
+					<img src="image/image-why.png" alt="contact US">
+				</div>
+				<div class="why__content">
+					<div class="list">
+						<a href="javascript:void(0)" onclick="openWhy('mission');">our mission</a>
+						<a href="javascript:void(0)" onclick="openWhy('vission');">our vission</a>
+						<a href="javascript:void(0)" onclick="openWhy('values');">our values</a>
+					</div>
+					<div class="content-right mission" id="content-right-first">
+						<h4 class="content__title">Over 20 Years Experience</h4>
+						<p class="desc">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly </p>
+						<span>Our Work Process</span>
+						<div class="list-item">
+							<div class="item">
+								<p class="number">01</p>
+								<p class="text">Discussion</p>
+							</div>
+							<div class="item">
+								<p class="number">02</p>
+								<p class="text">Analytics</p>
+							</div>
+							<div class="item">
+								<p class="number">03</p>
+								<p class="text">Start Working</p>
+							</div>
+						</div>
+					</div>
+					<div class="content-right  vission">
+						<h4 class="content__title">Ngôn ngữ lập trình Java Script</h4>
+						<p class="desc">JavaScript, theo phiên bản hiện hành, là một ngôn ngữ lập trình thông dịch được phát triển từ các ý niệm nguyên mẫu. Ngôn ngữ này được dùng rộng rãi cho các trang web cũng như phía máy chủ. </p>
+						<span>Our Work Process</span>
+						<div class="list-item">
+							<div class="item">
+								<p class="number">01</p>
+								<p class="text">Array</p>
+							</div>
+							<div class="item">
+								<p class="number">02</p>
+								<p class="text">Object</p>
+							</div>
+							<div class="item">
+								<p class="number">03</p>
+								<p class="text">Function</p>
+							</div>
+						</div>
+					</div>
+					<div class="content-right values">
+						<h4 class="content__title">Framework React JS</h4>
+						<p class="desc">React là một thư viện JavaScript để xây dựng giao diện người dùng. Nó được duy trì bởi Facebook và một cộng đồng gồm các nhà phát triển và công ty cá nhân. React có thể được sử dụng làm cơ sở trong việc phát triển các ứng dụng một trang hoặc di động </p>
+						<span>Our Work Process</span>
+						<div class="list-item">
+							<div class="item">
+								<p class="number">01</p>
+								<p class="text">HTML</p>
+							</div>
+							<div class="item">
+								<p class="number">02</p>
+								<p class="text">CSS</p>
+							</div>
+							<div class="item">
+								<p class="number">03</p>
+								<p class="text">BOOTSTRAP</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</div>
 	<script src="js/main.js"></script>
 	<script src="js/slide.js"></script>
