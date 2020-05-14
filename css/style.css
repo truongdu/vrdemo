@@ -99,6 +99,13 @@ a {
 }
 
 /*Header-bot*/
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
 
 nav{
   background: #fff;
@@ -108,6 +115,8 @@ nav ul{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin: 0 auto; 
+  max-width: 115rem;
 }
 nav ul li{
   padding: 1rem 0;
@@ -1256,7 +1265,7 @@ nav ul li.btn__header.hide i:before{
 
   /*footer-bot*/
   .footer-bot{
-    height: 8rem;
+    height: 4rem;
     font-size: 1.2rem;
     padding: 1rem 0;
   }

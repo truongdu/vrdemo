@@ -34,7 +34,7 @@
 			</div>
 			<div class="header__bot">
 				<div class="container">
-					<nav class="header__menu">
+					<nav class="header__menu"  id="myNavbar">
 						<ul>
 							<li class="header__logo"><img src="image/logo.png" alt="VR"></li>
 							<li class="items"><a href="#home">Home</a></li>
@@ -49,7 +49,6 @@
 				</div>
 			</div>
 		</header>
-
 		<section class="slideshow scrollspy" id="slider">
 		    <div class="mySlides fade" style=" height: 100%">
 		    	<div class="container" style=" height: 100%">
@@ -581,9 +580,26 @@
 	</div>
 	<script src="js/main.js"></script>
 	<script src="js/slide.js"></script>
-	<script src="js/scrollspy.js"></script>
+	
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="js/menu-reponsive.js"></script>z
+    <script src="js/menu-reponsive.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 	<script src="js/scrollmenu.js"></script>
+	<script>
+		window.onscroll = function() {myFunction()};
+
+		var myNavbar = document.getElementById("myNavbar");
+		var sticky = myNavbar.offsetTop;
+
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+		    myNavbar.classList.add("sticky")
+		  } else {
+		    myNavbar.classList.remove("sticky");
+		  }
+		}
+	</script>
 </body>
 </html>
