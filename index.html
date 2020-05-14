@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Phạm Xuân Dũ</title>
 	<link rel="icon" href="image/logo-none.png" sizes="16x16">
 	<link rel="stylesheet" href="css/style.css">
@@ -9,9 +10,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Rufina:700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
 </head>
-<body>
+<body>	
 	<div class="container-fluid">
-		<header class="header">
+		<header class="header scrollspy"  id="home">
 			<div class="header__top">
 				<div class="container header__top-top">
 					<div class="email">
@@ -32,29 +33,24 @@
 				</div>		
 			</div>
 			<div class="header__bot">
-				<div class="container header__bot-bot">
-					<div class="header__logo">
-						<img src="image/logo.png" alt="VR">
-					</div>
+				<div class="container">
 					<nav class="header__menu">
 						<ul>
-							<li><a href="#">HOME</a></li>
-							<li><a href="#">ABOUT</a></li>
-							<li><a href="#">SERVICES</a></li>
-							<li><a href="#">PROJECTS</a></li>
-							<li><a href="#">BLOG</a></li>
-							<li><a href="#">CONTACTS</a></li>
-							<li class="li__search">
-								<input  type="text" class="search_click" name="word" placeholder="Bạn đang tìm kiếm gì ?" autofocus="autofocus" />
-								<a href="#"><i class="fas fa-search" id ="search" ></i></a>
-							</li>
+							<li class="header__logo"><img src="image/logo.png" alt="VR"></li>
+							<li class="items"><a href="#home">Home</a></li>
+							<li class="items"><a href="#services">Services</a></li>
+							<li class="items"><a href="#about">About</a></li>
+							<li class="items"><a href="#project">Projects</a></li>
+							<li class="items"><a href="#blog">Blog</a></li>
+							<li class="items"><a href="#contact">Contact</a></li>
+							<li class="btn__header"><a href="#"><i class="fas fa-bars"></i></a></li>
 						</ul>
 					</nav>
 				</div>
 			</div>
 		</header>
 
-		<div class="slideshow">
+		<section class="slideshow scrollspy" id="slider">
 		    <div class="mySlides fade" style=" height: 100%">
 		    	<div class="container" style=" height: 100%">
 	    			<div class="mySlides__content">
@@ -100,9 +96,9 @@
 		      	<span class="dot" onclick="currentSlide(2)"></span>
 		      	<span class="dot" onclick="currentSlide(3)"></span>
     		</div>
-	    </div>
+	    </section> 
 
-	    <section class="services">
+	    <section class="services scrollspy" id="services">
 	    	<div class="container">
 	    		<div class="services__heading">
 		    		<h3 class="title">Our Services</h3>
@@ -120,7 +116,7 @@
 		    		</div>
 		    		<div class="services__group">
 		    			<div class="services__item">
-		    				<img src="image/icon-home.png" alt="Home">
+		    				<img src="image/icon-construction.png" alt="Home">
 		    				<div class="content">
 		    					<h4 class="title">House Renovation</h4>
 		    					<p class="desc">Giao diện website demo  VRđược viết bằng HTML5, CSS 3. Giao diện website demo  VRđược viết bằng HTML5, CSS 3</p>
@@ -129,7 +125,7 @@
 		    		</div>
 		    		<div class="services__group">
 		    			<div class="services__item">
-		    				<img src="image/icon-home.png" alt="Home">
+		    				<img src="image/icon-consulting.png" alt="Home">
 		    				<div class="content">
 		    					<h4 class="title">House Renovation</h4>
 		    					<p class="desc">Giao diện website demo  VRđược viết bằng HTML5, CSS 3. Giao diện website demo  VRđược viết bằng HTML5, CSS 3</p>
@@ -138,7 +134,7 @@
 		    		</div>
 		    		<div class="services__group">
 		    			<div class="services__item">
-		    				<img src="image/icon-home.png" alt="Home">
+		    				<img src="image/icon-design.png" alt="Home">
 		    				<div class="content">
 		    					<h4 class="title">House Renovation</h4>
 		    					<p class="desc">Giao diện website demo  VRđược viết bằng HTML5, CSS 3. Giao diện website demo  VRđược viết bằng HTML5, CSS 3</p>
@@ -147,7 +143,7 @@
 		    		</div>
 		    		<div class="services__group">
 		    			<div class="services__item">
-		    				<img src="image/icon-home.png" alt="Home">
+		    				<img src="image/icon-painting.png" alt="Home">
 		    				<div class="content">
 		    					<h4 class="title">House Renovation</h4>
 		    					<p class="desc">Giao diện website demo  VRđược viết bằng HTML5, CSS 3. Giao diện website demo  VRđược viết bằng HTML5, CSS 3</p>
@@ -156,7 +152,7 @@
 		    		</div>
 		    		<div class="services__group">
 		    			<div class="services__item">
-		    				<img src="image/icon-home.png" alt="Home">
+		    				<img src="image/icon-seting.png" alt="Home">
 		    				<div class="content">
 		    					<h4 class="title">House Renovation</h4>
 		    					<p class="desc">Giao diện website demo  VRđược viết bằng HTML5, CSS 3. Giao diện website demo  VRđược viết bằng HTML5, CSS 3</p>
@@ -167,7 +163,7 @@
 	    	</div>
 	    </section>
 
-	    <section class="about">
+	    <section class="about scrollspy" id="about">
 	    	<div class="container">
 	    		<div class="about__content">
 	    			<div class="about__content__left">
@@ -188,15 +184,16 @@
 		    				</div>
 		    			</div>
 	    			</div>
-		    		<div class="about__content__right">
+	    			<div class="about__content__right">
 		    			<img src="image/image-about.png" alt="about">
 		    			<div class="background"></div>
 		    		</div>
+		    		
 	    		</div>
 	    	</div>
 	    </section>
 
-		<section class="project">
+		<section class="project scrollspy" id="project">
 			<div class="project-top">
 				<div class="title">Our Project</div>
 				<div class="desc">JavaScript là một ngôn ngữ lập trình thông dịch được phát triển từ các ý niệm nguyên mẫu.</div>
@@ -285,7 +282,7 @@
 			</div>
 		</section>
 		
-		<section class="why">
+		<section class="why scrollspy" id="why">
 			<div class="why__top">
 				<h3 class="title">Why Choose Us</h3>
 				<p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
@@ -340,7 +337,7 @@
 					</div>
 					<div class="content-right values">
 						<h4 class="content__title">Framework React JS</h4>
-						<p class="desc">React là một thư viện JavaScript để xây dựng giao diện người dùng. Nó được duy trì bởi Facebook và một cộng đồng gồm các nhà phát triển và công ty cá nhân. React có thể được sử dụng làm cơ sở trong việc phát triển các ứng dụng một trang hoặc di động </p>
+						<p class="desc">React là một thư viện JavaScript để xây dựng giao diện người dùng. Nó được duy trì bởi Facebook và một cộng đồng gồm các nhà phát triển và công ty cá nhân.</p>
 						<span>Our Work Process</span>
 						<div class="list-item">
 							<div class="item">
@@ -361,7 +358,7 @@
 			</div>
 		</section>
 
-		<section class="contact">
+		<section class="contact scrollspy" >
 			<div class="container">
 				<div class="contact-us">
 					<div class="contact__content">
@@ -377,7 +374,7 @@
 			</div>
 		</section>
 
-		<section class="blog">
+		<section class="blog scrollspy" id="blog">
 			<div class="container">
 				<div class="blog__slogan">
 					<h3 class="title">
@@ -478,7 +475,7 @@
 			</div>
 		</section>
 
-		<section class="partner">
+		<section class="partner ">
 			<div class="container">
 				<div class="partner__list">
 					<div class="partner__item">
@@ -503,7 +500,7 @@
 			</div>
 		</section>
 
-		<section class="footer">
+		<section class="footer" id="contact">
 			<div class="container">
 				<div class="footer__grid">
 					<div class="footer__about">
@@ -579,10 +576,14 @@
 			</div>
 		</section>
 		<section class="footer-bot">
-			<p>Copyright @ 2020, <a>PHẠM XUÂN DŨ</a> DEMO HTML5, CSS 3, JAVASCRIPT</p>
+			<div>Copyright @ 2020, <a>PHẠM XUÂN DŨ</a>DEMO HTML5, CSS 3, JAVASCRIPT</div>
 		</section>
 	</div>
 	<script src="js/main.js"></script>
 	<script src="js/slide.js"></script>
+	<script src="js/scrollspy.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="js/menu-reponsive.js"></script>z
 </body>
 </html>

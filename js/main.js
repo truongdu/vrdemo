@@ -1,16 +1,18 @@
-// SearCH Click
-var search1 = document.getElementById("search");
-var searchFrom = document.getElementsByClassName('search_click');
-search1.addEventListener('click',search_btn);
-function search_btn () {
+// // SearCH Click
+// var search1 = document.getElementById("search");
+// var searchFrom = document.getElementsByClassName('search_click');
+// search1.addEventListener('click',search_btn);
+// function search_btn () {
 
-	for ( var i = 0; i<searchFrom.length ; i++){
-		var addClassSearch = searchFrom[i].classList.add('show-search');
-	}
+// 	for ( var i = 0; i<searchFrom.length ; i++){
+// 		var addClassSearch = searchFrom[i].classList.add('show-search');
+// 	}
 	
-}
+// }
+
 // Tab services
 var tab = document.getElementsByClassName("project__item");
+console.log(tab);
 function openItem(item) {
 	if(item === "All"){
 		 for ( var i = 0; i < tab.length; i++) {
