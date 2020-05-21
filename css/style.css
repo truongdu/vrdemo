@@ -115,7 +115,7 @@ nav ul{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin: 0 auto; 
+  margin: 0 auto;
   max-width: 115rem;
 }
 nav ul li{
@@ -980,7 +980,6 @@ nav ul li.btn__header.hide i:before{
     display: flex;
   }
   .blog .title{
-    font-size: 2rem;
     font-weight: 700;
     margin: 0;
   }
